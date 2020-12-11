@@ -1,12 +1,23 @@
-Hey Disshad and Likhith!!
-How are you guys doing?
+def calculate(response):  
+    arg1 = int(input("1st no> "))     
+    arg2 = int(input("2nd no> ")) 
+    if(response == 1):return arg1+arg2
+    elif(response == 2):return arg1-arg2
+    elif (response ==3):return arg1*arg2
+    elif(response == 4):return arg1/arg2   
+    else:
+         print("Invalid resonse in choosing operator  ")
+         return 0
 
-Instruction Manual
 
-If (you can read this code)
-ping_me in #whatsapp with print("Code read")
-elseif again ping_me in #whatsapp with print("Code unread")
-else
-try to edit this code and try to make a pull request. 
-print("I want to edit!")
-print("hi")
+def calculator():           
+    print("Welcome to the simple command line calculator \n")
+    condition = "y"
+    while(condition== 'y'):
+         print("Pls enter 1 for addition,2 for subtraction,3 for multiplication,4 for division", end = " ")
+         response = int(input("> "))   
+         print("Plz enter the numbers to operate")
+         print(f"Answer is {calculate(response)}")
+         condition = input("Enter y to calculate again:")
+    
+calculator()    
